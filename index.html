@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer City</title>
+
+    <link rel="shortcut icon" href="./assets/icono.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/logo.jpg" alt="Logo Gamer City"
+                        class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse itemsMenu" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/proces.html">Procesadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/graficas.html">Placas de video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/monitores.html">Monitores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/perifericos.html">Periféricos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="carouselExampleFade" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="./pages/proces.html"><img src="./assets/carousel/carouselAmd.webp"
+                                class="d-block w-100" alt="Publicidad AMD"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./pages/graficas.html"><img src="./assets/carousel/carouselAorus.jpg"
+                                class="d-block w-100" alt="Publicidad Aorus"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./pages/graficas.html"><img src="./assets/carousel/carouselNvidia.jpg"
+                                class="d-block w-100" alt="Publicidad Nvidia"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./pages/perifericos.html"><img src="./assets/carousel/carouselRedragon.jpg"
+                                class="d-block w-100" alt="Publicidad Radeon"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="text-center titulo">Productos Destacados:</h1>
+            <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/graficas/radeon/radeon-xfx-rx9070xt-16gb.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Radeon XFX RX9070 16gb</h2>
+                        <p class="precioCard">$ 1.200.000</p>
+                        <div class="contenedorBtn">
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                            <button class="btnInfo">Info</button>
+                            <div id="miModal" class="modal">
+                                <div class="modalContent">
+                                    <a href="#" class="modalCerrar">X</a>
+
+                                    <h3>Especificaciones tecnicas:</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, hic culpa! Impedit, corrupti. Eius quos soluta vero maxime totam illo saepe quisquam aut et est, inventore harum exercitationem voluptates unde.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/proces/intel/intel-core-i9-14900k.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Intel Core I9 14900K</h2>
+                        <p class="precioCard">$ 852.500</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                        <button class="btnInfo">Info</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Card title</h2>
+                        <p class="precioCard">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Card title</h2>
+                        <p class="precioCard">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Card title</h2>
+                        <p class="precioCard">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Card title</h2>
+                        <p class="precioCard">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/perifericos/auris/auriculares-corsair-hs80.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Card title</h2>
+                        <p class="precioCard">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="tituloCard">Card title</h2>
+                        <p class="precioCard">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <button class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

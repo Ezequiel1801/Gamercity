@@ -1,0 +1,101 @@
+/* ctrl k c para comentar */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans";
+}
+
+body{
+    overflow-x: clip;
+}
+
+main{
+    background-color: #340270;
+}
+
+header{
+    background-color: #2C0D51;
+}
+
+.itemsMenu{
+    padding-right: 160px;
+    ul{
+        gap: 20px;
+    }
+}
+
+.navbar-brand img.logo{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    padding-left: 160px;
+}
+
+.titulo{
+    padding: 20px;
+    color: #fff;
+    text-shadow: 
+    0 0 4px #8623ff,
+    0 0 8px #8623ff,
+    0 0 12px #8623ff,
+    0 0 16px #8623ff,
+    0 0 20px #8623ff;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.card{
+    display: grid;
+    background-color: #701ada;
+}
+
+.card:hover{
+    background-color: #9049e7;
+    box-shadow: 0 0 10px #9049e7;
+}
+
+.card img{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card-body{
+    text-align: center;
+    color: white;
+}
+
+.tituloCard{
+    font-size: 30px;
+}
+
+.precioCard{
+    font-size: 20px;
+}
+
+.contenedorBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnInfo{
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    background-color: deepskyblue;
+}
+
+.btnInfo:hover{
+    background-color: rgb(0, 155, 207);
+}
